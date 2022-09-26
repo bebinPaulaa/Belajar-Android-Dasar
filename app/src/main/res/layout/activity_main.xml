@@ -11,12 +11,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Formulir Pendaftaran Mahasiswa Baru\n Universitas Multi Data Palembang"
+        android:text="Formulir Pendaftaran Mahasiswa Baru\nUniversitas Multi Data Palembang"
         android:textSize="17sp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="#673AB7"
+        android:textColor="#E6F447CE"
         android:layout_marginBottom="32dp"/>
 
     <EditText
@@ -36,36 +36,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jenis Kelamin : "
+        android:text="Jenis Kelamin"
         android:textSize="17sp"
         android:layout_marginTop="6dp"
         />
+
     <RadioGroup
-        android:id="@+id/rg_Jenis_Kelamin"
+        android:id="@+id/rg_jenis_kelamin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal">
 
-    <RadioButton
-        android:id="@+id/rb_laki_laki"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Laki-Laki"
-        android:textSize="17sp"/>
+        <RadioButton
+            android:id="@+id/rb_laki_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textSize="17sp"/>
 
-    <RadioButton
-        android:id="@+id/rb_perempuan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Perempuan"
-        android:textSize="17sp"
-        android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textSize="17sp"
+            android:checked="true"/>
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/btn_daftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daftar"
+        android:text="DAFTAR"
         android:layout_marginTop="32dp"/>
+    />
 
 </LinearLayout>
