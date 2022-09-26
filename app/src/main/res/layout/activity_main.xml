@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulir Pendaftaran Mahasiswa Baru\n Universitas Multi Data Palembang"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#673AB7"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_nomor_pendaftaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Calon Mahasiswa"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin : "
+        android:textSize="17sp"
+        android:layout_marginTop="6dp"
+        />
+    <RadioGroup
+        android:id="@+id/rg_Jenis_Kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+    <RadioButton
+        android:id="@+id/rb_laki_laki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-Laki"
+        android:textSize="17sp"/>
+
+    <RadioButton
+        android:id="@+id/rb_perempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:textSize="17sp"
+        android:checked="true"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
